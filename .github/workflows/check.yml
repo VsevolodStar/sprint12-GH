@@ -47,7 +47,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/parcel-app
+          images: ${{ secrets.DOCKER_USERNAME }}/parcel-app
           tags: |
             type=semver,pattern={{version}}
             type=raw,value=latest
